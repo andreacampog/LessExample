@@ -1,0 +1,28 @@
+.sombra-caja {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 5px 15px 0px rgba(255, 255, 255, 0.5);
+}
+.Oswald {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #414141;
+  font-size: 18px;
+  line-height: 28px;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}

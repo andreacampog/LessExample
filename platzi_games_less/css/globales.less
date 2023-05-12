@@ -1,0 +1,61 @@
+@modo:Claro;
+@fuente1:'Lato', sans-serif;
+@fuente2:'Oswald', sans-serif;
+@fuentebase: 18px;
+
+
+.sombra-caja{
+	box-shadow: 0px 5px 15px 0px fade(@color-primario,50%);
+}
+
+.Oswald{
+	font-family: @fuente2;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.fuente(@font-size){
+	font-size: @font-size;
+	line-height: @font-size + 10%;
+}
+
+
+.modo(Claro) {
+	@color-fondo: #FFFFFF;
+	@color-title: #ffffff;
+	@color-primario: #333333;
+	@color-claro: #FFFFFF;
+	@color-secundario: #8841DA;
+	@color-variacion: #012179;
+	@color-variable: #000000;
+}
+
+.modo(Oscuro) {
+	@color-fondo: #333333;
+	@color-title: #FFFFFF;
+	@color-primario: #FFFFFF;
+	@color-claro: #8841DA;
+	@color-secundario: @color-claro;
+	@color-variacion: #FFFFFF;
+	@color-variable: @color-claro;
+}
+
+.modo(@modo);
+
+*{
+	box-sizing: border-box;
+	
+}
+body {
+	margin: 0;
+	font-family: @fuente1;
+	background-color: @color-fondo;
+	color: @color-primario;
+	.fuente(@fuentebase);
+		
+}
+
+h1,h2,h3 {
+	margin: 0;
+	.Oswald;	
+}
